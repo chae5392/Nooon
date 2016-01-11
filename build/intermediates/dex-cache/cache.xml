@@ -2,18 +2,11 @@
 <items version="2" >
 
     <item
-        jar="D:\noon\workspace\Nooon\app\libs\gson-2.3.jar"
+        jar="D:\noon\workspace\Nooon\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
-        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\gson-2.3-382ffee42a4d61b80e3731ba7ff6868632237d14.jar" />
-    </item>
-    <item
-        jar="D:\noon\workspace\Nooon\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\classes-365260786c95b1f0066cbf1b9ba25efa48e7a6d8.jar" />
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\classes-a45884fc00dc4d9bf8f93f73e27a374a972962ae.jar" />
     </item>
     <item
         jar="D:\noon\workspace\Nooon\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
@@ -21,6 +14,34 @@
         revision="23.0.2"
         sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
         <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\classes-645312febee6a621351e1bf275cfe0785d55377e.jar" />
+    </item>
+    <item
+        jar="D:\noon\workspace\Nooon\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-0e55e454d851752fc880b9859b02549058fc7a44.jar" />
+    </item>
+    <item
+        jar="D:\noon\workspace\Nooon\app\libs\icu4j-4.8.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="654b7021e7bb6c5b7b35c88d23cac1022c7b3d6b">
+        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\icu4j-4.8.1.1-cc7b2d6ec670713c4ac62e4344e05995dee6dadd.jar" />
+    </item>
+    <item
+        jar="D:\noon\workspace\Nooon\app\libs\gson-2.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
+        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\gson-2.3-382ffee42a4d61b80e3731ba7ff6868632237d14.jar" />
+    </item>
+    <item
+        jar="D:\noon\workspace\Nooon\app\libs\libDaumMapAndroid.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="91c9de067eff6b3e026d21934e91ec45db8cd277">
+        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\libDaumMapAndroid-eaae6e01f375c3c2b541ea53fbf04ecba6e21316.jar" />
     </item>
     <item
         jar="D:\noon\workspace\Nooon\app\libs\universal-image-loader-1.9.4.jar"
@@ -37,18 +58,11 @@
         <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\classes-8c801f5e73087a630da7e2c9f2e389a8aef0d5e5.jar" />
     </item>
     <item
-        jar="D:\noon\workspace\Nooon\app\libs\icu4j-4.8.1.1.jar"
+        jar="D:\noon\workspace\Nooon\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="654b7021e7bb6c5b7b35c88d23cac1022c7b3d6b">
-        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\icu4j-4.8.1.1-cc7b2d6ec670713c4ac62e4344e05995dee6dadd.jar" />
-    </item>
-    <item
-        jar="D:\noon\workspace\Nooon\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-0e55e454d851752fc880b9859b02549058fc7a44.jar" />
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\classes-365260786c95b1f0066cbf1b9ba25efa48e7a6d8.jar" />
     </item>
     <item
         jar="D:\Program\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
@@ -56,20 +70,6 @@
         revision="23.0.2"
         sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
         <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-19ff179045445521fe12671cb1ae692077254fea.jar" />
-    </item>
-    <item
-        jar="D:\noon\workspace\Nooon\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\classes-a45884fc00dc4d9bf8f93f73e27a374a972962ae.jar" />
-    </item>
-    <item
-        jar="D:\noon\workspace\Nooon\app\libs\libDaumMapAndroid.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="91c9de067eff6b3e026d21934e91ec45db8cd277">
-        <dex dex="D:\noon\workspace\Nooon\app\build\intermediates\pre-dexed\debug\libDaumMapAndroid-eaae6e01f375c3c2b541ea53fbf04ecba6e21316.jar" />
     </item>
 
 </items>

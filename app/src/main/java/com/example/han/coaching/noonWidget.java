@@ -74,7 +74,7 @@ public class noonWidget extends AppWidgetProvider {
         Intent intent = new Intent(context, noonWidget.class);
         intent.setAction("chae.widget.update");
         PendingIntent pending = PendingIntent.getBroadcast(context, 0, intent, 0);
-        am.setRepeating(AlarmManager.RTC, System.currentTimeMillis(), 60000 , pending);
+        am.setRepeating(AlarmManager.RTC, System.currentTimeMillis(), 240000 , pending);
 
     }
     @Override
@@ -109,7 +109,6 @@ public class noonWidget extends AppWidgetProvider {
     public void onReceive(final Context context, Intent intent) {
         super.onReceive(context, intent);
         if (intent.getAction().equals("chae.widget.update")) {
-            Toast.makeText(context,"UPDATE", Toast.LENGTH_SHORT).show();
             widgetUpdate(context);
         }
         if (intent.getAction().equals("chae.widget.left")) {

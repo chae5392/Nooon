@@ -48,7 +48,9 @@ public class GetFood extends BroadcastReceiver {
 
         try {
             Log.i("aaaa", "-----------------------------" + staticMerge.temp);
-
+            Uri ringtoneUri = RingtoneManager.getActualDefaultRingtoneUri(context, RingtoneManager.TYPE_NOTIFICATION);
+            Ringtone ringtone = RingtoneManager.getRingtone(context, ringtoneUri);
+            ringtone.play();
 
         } catch (Exception e) {
 

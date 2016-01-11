@@ -42,6 +42,8 @@ public class Weather extends BroadcastReceiver {
             lon = params[1];
             try {
                 String UUU = "http://api.openweathermap.org/data/2.5/weather?lat="+lati+"&lon="+lon+"&appid=228771918de505e0d9cf551a5a322259";
+
+                Log.i("weather",""+UUU);
                 URL url = new URL(UUU);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 conn.setReadTimeout(4000 /* milliseconds */);
