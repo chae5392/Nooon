@@ -1,5 +1,9 @@
 package com.example.han.coaching;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+
 import java.util.ArrayList;
 
 /**
@@ -8,12 +12,16 @@ import java.util.ArrayList;
 public class staticMerge {
     static String temp="clear";
     static String what="nothing";
-    static String dong = "";
-    static String bunji = "";
+    static String dong;
+    static String bunji;
     static String[] finish_food = new String[5];
     static ArrayList<String> food = new ArrayList<>();
     static ArrayList<String> foodAnni = new ArrayList<>();
     static boolean timer = false;
+
+    static {
+        loadAddr(MainActivity.mContext);
+    }
 
     public static void idTotemp (int i) {
         if(200<=i && i<300) {
@@ -40,5 +48,23 @@ public class staticMerge {
             temp = "storm";
         }
     }
+
+    public static void saveAddr(Context context, String Dong, String Bunji) {
+        SharedPreferences pref = context.getSharedPreferences("staticMerge", Activity.MODE_PRIVATE);
+        SharedPreferences.Editor editor = pref.edit();
+        editor.remove("dong").commit();
+        editor.putString("dong", Dong);
+        editor.remove("bunji").commit();
+        editor.putString("bunji", Bunji);
+
+        editor.commit();
+    }
+
+    public static void loadAddr(Context context) {
+        SharedPreferences pref = context.getSharedPreferences("staticMerge", Activity.MODE_PRIVATE);
+        dong = pref.getString("dong","");
+        bunji = pref.getString("bunji","");
+    }
+
 }
 

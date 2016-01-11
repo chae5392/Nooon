@@ -3,6 +3,9 @@ package com.example.han.coaching;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Handler;
 import android.util.Log;
 
@@ -81,7 +84,9 @@ public class GetFood extends BroadcastReceiver {
 
         try {
             Log.i("aaaa", "-----------------------------" + staticMerge.temp);
-
+            Uri ringtoneUri = RingtoneManager.getActualDefaultRingtoneUri(context, RingtoneManager.TYPE_NOTIFICATION);
+            Ringtone ringtone = RingtoneManager.getRingtone(context, ringtoneUri);
+            ringtone.play();
 
         } catch (Exception e) {
 

@@ -211,33 +211,33 @@ public class optionActivity extends FragmentActivity {
             SI.setSharedTime(index, hourOfDay, minute);
             //RA.registerAM("ACTION.GET.ONE", index, id);
             switch (index){
-                case "1":
+                case "0":
                     RA.AlarmCancel("ACTION.GET.ONE",1);
                     RA.registerAM("ACTION.GET.ONE","0",1);
                     break;
-                case "2":
+                case "1":
                     RA.AlarmCancel("ACTION.GET.TWO",2);
                     RA.registerAM("ACTION.GET.TWO", "1", 2);
                     break;
-                case "3":
+                case "2":
                     RA.AlarmCancel("ACTION.GET.THREE",3);
                     RA.registerAM("ACTION.GET.THREE", "2", 3);
                     break;
-                case "4":
+                case "3":
                     RA.AlarmCancel("ACTION.GET.FOUR",4);
                     RA.registerAM("ACTION.GET.FOUR", "3", 4);
                     break;
-                case "5":
+                case "4":
                     RA.AlarmCancel("ACTION.GET.FIVE",5);
-                    RA.registerAM("ACTION.GET.FOUR", "4", 5);
+                    RA.registerAM("ACTION.GET.FIVE", "4", 5);
+                    break;
+                case "5":
+                    RA.AlarmCancel("ACTION.GET.SIX",6);
+                    RA.registerAM("ACTION.GET.SIX", "5", 6);
                     break;
                 case "6":
-                    RA.AlarmCancel("ACTION.GET.SIX",6);
-                    RA.registerAM("ACTION.GET.FOUR", "5", 6);
-                    break;
-                case "7":
                     RA.AlarmCancel("ACTION.GET.SEVEN",7);
-                    RA.registerAM("ACTION.GET.FOUR", "6", 7);
+                    RA.registerAM("ACTION.GET.SEVEN", "6", 7);
                     break;
             }
             Toast.makeText(optionActivity.this, "저장 되었습니다.", Toast.LENGTH_SHORT).show();

@@ -287,7 +287,7 @@ public class DBHandler {
                 if(!(staticMerge.dong.equals("") || staticMerge.bunji.equals(""))) {
                     db.execSQL("INSERT INTO abode VALUES (null, '" + staticMerge.dong + "', '" + staticMerge.bunji + "', 1, 0);");
                 }
-                Log.i("db","abode_insert Successe");
+                Log.i("db","abode_insert Successe" + staticMerge.dong +"," + staticMerge.bunji);
             }catch (Exception e) {
                 Log.i("db","abode_insert Failed");
             }

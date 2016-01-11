@@ -152,9 +152,10 @@ public class Weather extends BroadcastReceiver {
                 String exceptionAsStrting = sw.toString();
                 Log.e("aaaa", exceptionAsStrting);
             }
-            Log.i("aaaa",dong+","+bunji);
-            staticMerge.dong = dong;
-            staticMerge.bunji = bunji;
+            Log.i("aaaa","dong,bunji:"+dong+","+bunji);
+            staticMerge.saveAddr(MainActivity.mContext, dong, bunji);
+            //staticMerge.dong = dong;
+            //staticMerge.bunji = bunji;
             //동 이름 result
             super.onPostExecute(s);
         }

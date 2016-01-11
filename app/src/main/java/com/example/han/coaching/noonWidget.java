@@ -1,6 +1,7 @@
 package com.example.han.coaching;
 
 import android.app.Activity;
+import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -35,6 +36,9 @@ public class noonWidget extends AppWidgetProvider {
     private static Item item;
     private TimerTask mTask;
     public static Timer mTimer;
+    AlarmManager mAlarm;
+    PendingIntent mPending;
+
 
     public static String contentValue;
     public static int themaValue;
@@ -65,6 +69,13 @@ public class noonWidget extends AppWidgetProvider {
     public void onEnabled(Context context) {
         super.onEnabled(context);
         vibrator = (Vibrator)context.getSystemService(Context.VIBRATOR_SERVICE);
+        AlarmManager am=(AlarmManager)context.getSystemService(
+                Context.ALARM_SERVICE);
+        Intent intent = new Intent(context, noonWidget.class);
+        intent.setAction("chae.widget.update");
+        PendingIntent pending = PendingIntent.getBroadcast(context, 0, intent, 0);
+        am.setRepeating(AlarmManager.RTC, System.currentTimeMillis(), 60000 , pending);
+
     }
     @Override
     public void onDeleted(Context context, int[] appWidgetIds) {
@@ -72,6 +83,13 @@ public class noonWidget extends AppWidgetProvider {
     }
     @Override
     public void onDisabled(Context context) {
+        AlarmManager am=(AlarmManager)context.getSystemService(
+                Context.ALARM_SERVICE);
+        Intent intent = new Intent(context, noonWidget.class);
+        intent.setAction("chae.widget.update");
+        PendingIntent pending = PendingIntent.getBroadcast(context, 0, intent, 0);
+        am.cancel(pending);
+
         super.onDisabled(context);
     }
 
@@ -91,6 +109,7 @@ public class noonWidget extends AppWidgetProvider {
     public void onReceive(final Context context, Intent intent) {
         super.onReceive(context, intent);
         if (intent.getAction().equals("chae.widget.update")) {
+            Toast.makeText(context,"UPDATE", Toast.LENGTH_SHORT).show();
             widgetUpdate(context);
         }
         if (intent.getAction().equals("chae.widget.left")) {
