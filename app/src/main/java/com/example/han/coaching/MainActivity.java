@@ -201,6 +201,17 @@ public class MainActivity extends FragmentActivity {
                 Intent intent = new Intent(MainActivity.this, optionActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.nowfood:
+                // create intent to perform web search for this planet
+                registerAlarm rA = new registerAlarm(getApplicationContext());
+                rA.testAM2("ACTION.GET.NORMAL", 3);
+                return true;
+            case R.id.sub1:
+                mHandler.sendEmptyMessage(1);
+                return true;
+            case R.id.sub2:
+                mHandler.sendEmptyMessage(0);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

@@ -16,6 +16,21 @@
   -->
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nowfood"
+        android:icon="@drawable/nowfood"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/newss"
+        android:icon="@drawable/newss"
+        android:showAsAction="always" >
+        <menu>
+            <item android:title ="음식점"
+                android:id="@+id/sub1"></item>
+            <item android:title ="뉴스"
+                android:id="@+id/sub2"></item>
+        </menu>
+    </item>
+
     <item android:id="@+id/action_websearch"
           android:icon="@drawable/ic_settings_white_24dp"
           android:showAsAction="ifRoom|withText" />

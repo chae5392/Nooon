@@ -253,19 +253,9 @@
             android:id="@+id/stopservice"
             android:layout_gravity="center_horizontal"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@+id/button4"
-            android:layout_toEndOf="@+id/button4" />
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="지금 음식점 추천"
-            android:onClick="onClicked3"
-            android:layout_gravity="center_horizontal"
-            android:layout_above="@+id/button"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:id="@+id/button4" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -281,9 +271,9 @@
             android:text="기념일추가"
             android:id="@+id/addAnni"
             android:layout_gravity="center_horizontal"
-            android:layout_alignTop="@+id/button4"
-            android:layout_toRightOf="@+id/button4"
-            android:layout_toEndOf="@+id/button4" />
+            android:layout_above="@+id/button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
 

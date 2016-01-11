@@ -258,10 +258,7 @@ public class optionActivity extends FragmentActivity {
         Intent intent = new Intent(this, DBActivity.class);
         startActivity(intent);
     }
-    public void onClicked3(View v) {
-        registerAlarm rA = new registerAlarm(getApplicationContext());
-        rA.testAM2("ACTION.GET.NORMAL", 3);
-    }
+
     @Override
     protected void onResume() {
         super.onResume();
