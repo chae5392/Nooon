@@ -60,10 +60,11 @@
         android:verticalScrollbarPosition="right">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="420dp">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="420dp"
+                android:layout_height="match_parent"
                 android:id="@+id/dbtv"
                 android:background="@android:color/darker_gray"
                 android:textColor="@android:color/holo_red_dark"

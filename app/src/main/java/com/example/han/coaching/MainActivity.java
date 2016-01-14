@@ -30,6 +30,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import net.daum.mf.map.api.MapPOIItem;
 import net.daum.mf.map.api.MapPoint;
@@ -205,6 +206,7 @@ public class MainActivity extends FragmentActivity {
                 // create intent to perform web search for this planet
                 registerAlarm rA = new registerAlarm(getApplicationContext());
                 rA.testAM2("ACTION.GET.NORMAL", 3);
+                Toast.makeText(this, "RELOAD", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.sub1:
                 mHandler.sendEmptyMessage(1);
@@ -542,6 +544,7 @@ public class MainActivity extends FragmentActivity {
         SelectBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(mContext,"선택 되었습니다.", Toast.LENGTH_SHORT).show();
                 Item in1 = MainActivity.ThemaItem.get(index);
                 DBHandler dbHandler = DBHandler.open(MainActivity.mContext, in1);
                 dbHandler.click_time();

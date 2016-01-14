@@ -283,6 +283,7 @@ public class DBHandler {
         }
     }
     public void abode_insert() {
+        staticMerge.loadAddr(MainActivity.mContext);
             try {
                 if(!(staticMerge.dong.equals("") || staticMerge.bunji.equals(""))) {
                     db.execSQL("INSERT INTO abode VALUES (null, '" + staticMerge.dong + "', '" + staticMerge.bunji + "', 1, 0);");
